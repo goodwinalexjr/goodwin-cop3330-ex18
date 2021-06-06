@@ -1,3 +1,8 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Alex Goodwin
+ */
+
 package org.example;
 
 import java.util.Scanner;
@@ -21,7 +26,7 @@ public class App {
         //int and Strings
         String Fer = "";
         String Cel = "";
-        int temperature = 0;
+        int temperature;
         int inputs = Integer.parseInt(input);
 
         //if statement for what is done
@@ -29,7 +34,7 @@ public class App {
             System.out.print("Please enter the temperature in Fahrenheit: ");
             String Fahrenheit = numbers.nextLine();
             int F = Integer.parseInt(Fahrenheit);
-            temperature = (F - 32) * (5/9);
+            temperature = (F - 32) * 5/9;
             Cel = "Celsius";
 
         }
@@ -37,7 +42,7 @@ public class App {
             System.out.print("Please enter the temperature in Celsius: ");
             String Celsius = numbers.nextLine();
             int C = Integer.parseInt(Celsius);
-            temperature = (C * (9/5)) + 32;
+            temperature = (C * 9/5) + 32;
             Fer = "Fahrenheit";
         }
         System.out.println("Th temperature in " + Cel + Fer + " is " + temperature + ".");
